@@ -12,8 +12,11 @@
 
   &__bottom {
     padding-bottom: 24px;
-
     @include content-padding-inline;
+
+    @include on-tablet {
+      padding-bottom: 66px;
+    }
   }
 
   &__title {
@@ -22,5 +25,9 @@
     line-height: 100%;
     letter-spacing: -1.5px;
     margin-bottom: 64px;
+
+    @include on-tablet {
+      font-size: 80px;
+    }
   }
 }
